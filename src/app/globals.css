@@ -2,32 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.navbar {
+    background-color: #263238;
+    /* z-index: 1; */
+    position: fixed;
+    width: 100% !important;
+}
+.btn {
+    background-color: #EC9A31;
+    color: white;
+    padding: 5.67px 10.68px;
+    border-radius: 1.34px;
+}
+.btn:hover {
+    background-color: #df9f4c;
+    color: rgb(218, 207, 207);
+}
+.footer {
+    background-color: #263238;
+}
+.footer-icon {
+    background-color: rgb(79, 83, 87);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+@media (max-width: 1024px) {
+    .footer-icon {
+        margin-right: 1.5rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    .footer-div {
+        margin-right: 3rem !important;
+    }
+    .column {
+        gap: 70px !important;
+        flex-direction: column;
+    }
+
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media (max-width: 1224px) {
+    .footer-icon {
+        margin-right: 0.3rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    .footer-div {
+        margin-right: 2.3rem !important;
+    }
+
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@media (max-width: 540px) {
+    .nav-div {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
 }
