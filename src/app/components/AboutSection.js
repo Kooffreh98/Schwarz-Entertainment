@@ -23,7 +23,7 @@ const AboutSection = () => {
                     <p className="text-white text-sm font-normal">
                       We're not just talent scouts; we're champions. We believe in the transformative power of
                       artistic expression, and we're here to cultivate a global stage where rising stars can shine.
-                      Join us on a journey of discovery, where creativity meets opportunity, and artistic dreams become reality
+                      Join us on a journey of discovery, where creativity meets opportunity, and artistic dreams become reality.
                     </p>
                 </div>
             </div>
